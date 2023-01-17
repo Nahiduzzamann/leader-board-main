@@ -17,7 +17,8 @@
     align-items: center;
     width: 100%;
 }
-.nav-container{
+
+.nav-container {
     display: flex;
     width: 935px;
     justify-content: space-between;
@@ -129,6 +130,10 @@ a {
     margin: 0;
 }
 
+.course-container {
+    display: flex;
+}
+
 .course-name {
     font-weight: 500;
     font-size: 20.0336px;
@@ -176,9 +181,107 @@ a {
     color: #FF4A60;
     margin: 3px 5.42px;
 }
-.course{
+
+.course {
     width: 252.42px;
     height: 269.79px;
     box-shadow: 0 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
     padding: 13px 12px;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav .nav-content-left>ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav .nav-content-right>ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 15px;
+        padding-left: 0;
+    }
+
+    .player-name {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .player-blog-section {
+        width: 350px;
+    }
+
+    .top-blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 26px;
+    }
+
+    .blog-name {
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        margin: 0;
+    }
+
+    .course-container {
+        flex-direction: column;
+    }
+    .latest-course-section {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-name {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .player-blog-section {
+        width: 500px;
+    }
+
+    .top-blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 26px;
+    }
+
+    .blog-name {
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        margin: 0;
+    }
+
+    .course-container {
+        flex-direction: column;
+    }
+    .latest-course-section {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
