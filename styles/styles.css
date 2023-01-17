@@ -15,6 +15,12 @@
     justify-content: space-evenly;
     background-color: #562EFF;
     align-items: center;
+    width: 100%;
+}
+.nav-container{
+    display: flex;
+    width: 935px;
+    justify-content: space-between;
 }
 
 .nav .nav-content-left>ul {
