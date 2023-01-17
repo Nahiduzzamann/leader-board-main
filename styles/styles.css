@@ -8,13 +8,6 @@
     background-color: #9F9F9F;
 }
 
-.body-container {
-    background-color: #FFFFFF;
-    width: 1200px;
-    height: 600px;
-    margin: 20px auto;
-}
-
 .nav {
     display: flex;
     justify-content: space-evenly;
@@ -45,8 +38,32 @@ a {
     color: #FFFFFF;
     text-decoration: none;
 }
-.nav-left-text{
+
+.nav-left-text {
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 500;
+}
+
+.main-body-container {
+    background-color: #FFFFFF;
+    padding: 33px 33px;
+}
+
+.player-name {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #D1D1D1;
+    gap: 30px;
+}
+
+.heading-text {
+    font-weight: 500;
+    font-size: 24px;
+    color: #562EFF;
+}
+
+.players {
+    display: flex;
+
 }
