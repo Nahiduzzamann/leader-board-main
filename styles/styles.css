@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
 * {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -5,7 +7,7 @@
 
 .body {
     margin: 0;
-    background-color: #9F9F9F;
+    background-color: #F3F1FF;
 }
 
 .nav {
@@ -46,24 +48,131 @@ a {
 }
 
 .main-body-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+    margin-bottom: 28px;
+}
+
+.player-blog-section,
+.latest-course-section {
     background-color: #FFFFFF;
     padding: 33px 33px;
+    width: 870px;
+    border-radius: 5px;
 }
 
 .player-name {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-bottom: 1px solid #D1D1D1;
     gap: 30px;
+}
+
+.top-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
 }
 
 .heading-text {
     font-weight: 500;
     font-size: 24px;
     color: #562EFF;
+    margin: 33px 0;
 }
 
-.players {
+.players,
+.blog {
     display: flex;
+}
 
+.players p {
+    margin-left: 16px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.top-blog-section {
+    border-top: 1px solid #D1D1D1;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.blog-descriptions {
+    margin-left: 16px;
+}
+
+.blog-name {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    margin: 0;
+}
+
+.by-name {
+    font-weight: 400;
+    font-size: 16px;
+    color: #562EFF;
+    margin: 16px 0;
+}
+
+.by {
+    font-weight: 400;
+    font-size: 16px;
+    color: #9F9F9F;
+    margin: 0;
+}
+
+.course-name {
+    font-weight: 500;
+    font-size: 20.0336px;
+    color: #1E1E1E;
+    margin: 0;
+}
+
+.course-author {
+    font-weight: 400;
+    font-size: 14.6913px;
+    color: #ED6B4F;
+    margin: 0;
+}
+
+.course-bottom {
+    display: flex;
+    margin-top: 19.25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.star {
+    display: flex;
+}
+
+.rating {
+    font-weight: 400;
+    font-size: 14.6913px;
+    color: #A2A2A2;
+    margin: 0;
+}
+
+.time {
+    display: flex;
+    height: 29.38px;
+    width: 94.83px;
+    border-radius: 14.69px;
+    background-color: #FFE4E8;
+    align-items: center;
+}
+
+.time-text {
+    font-weight: 600;
+    font-size: 14.6913px;
+    color: #FF4A60;
+    margin: 3px 5.42px;
+}
+.course{
+    width: 252.42px;
+    height: 269.79px;
+    box-shadow: 0 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    padding: 13px 12px;
 }
